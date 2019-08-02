@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "GlamorousAuthor 8/2/2019 10:55",
+	"super" : "SignalLogger",
+	"category" : "Beacon-Core-Loggers",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "NonInteractiveTranscriptLogger",
+	"type" : "normal"
+}
