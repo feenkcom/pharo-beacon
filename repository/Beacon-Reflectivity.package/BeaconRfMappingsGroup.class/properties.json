@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Beacon-Reflectivity",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"mappings"
+	],
+	"name" : "BeaconRfMappingsGroup",
+	"type" : "normal"
+}

@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "BeaconRfMapping",
+	"category" : "Beacon-Reflectivity",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"metalink",
+		"astNodes"
+	],
+	"name" : "BeaconRfMetalinkMapping",
+	"type" : "normal"
+}

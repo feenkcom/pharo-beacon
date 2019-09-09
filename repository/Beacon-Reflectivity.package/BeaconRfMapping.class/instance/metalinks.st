@@ -1,0 +1,3 @@
+accessing
+metalinks
+	self subclassResponsibility
