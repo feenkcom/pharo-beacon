@@ -1,4 +1,4 @@
-as yet unclassified
+inspecting
 gtInspectorStackIn: composite
 	<gtInspectorPresentationOrder: 0>
 	composite list 
