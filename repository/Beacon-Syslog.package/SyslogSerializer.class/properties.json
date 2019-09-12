@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "StephaneDucasse 2/22/2014 21:44",
-	"super" : "SignalSerializer",
+	"super" : "AnObsoleteSignalSerializer",
 	"category" : "Beacon-Syslog",
 	"classinstvars" : [ ],
 	"pools" : [ ],
