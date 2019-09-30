@@ -1,5 +1,5 @@
 ston persistence
-asStonDictionary
+asDictionary
 
 	^Dictionary new
 		at: #name put: name;

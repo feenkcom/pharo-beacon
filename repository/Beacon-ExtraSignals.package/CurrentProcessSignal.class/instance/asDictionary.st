@@ -1,7 +1,7 @@
 converting
 asDictionary 
 
-	^ Dictionary new 
+	^ super asDictionary
 		at: #preemptedName put: preemptedName;
 		at: #preemptedPriority put: preemptedPriority;
 		at: #preemptedStack put: (preemptedStack collect: [ :each | each asString ]);
