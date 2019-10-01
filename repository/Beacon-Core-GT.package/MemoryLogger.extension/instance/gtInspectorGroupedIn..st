@@ -6,4 +6,4 @@ gtInspectorGroupedIn: composite
 		display: [ (self recordings reverse groupedBy: [ :each | each class ]) associations ];
 		column: 'Class' evaluated: [ :each | each key ];
 		column: 'Instances' evaluated: [ :each | each value size ];
-		send: [ :each | each value ]
+		send: [ :each | self select: [ :s | s class = each key ] ]
