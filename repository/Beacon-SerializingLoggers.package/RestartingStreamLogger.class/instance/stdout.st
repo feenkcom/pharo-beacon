@@ -4,7 +4,10 @@ stdout
 
 	| theBlock |
 
-	theBlock := [ ZnNewLineWriterStream on: Stdio stdout ].
+	theBlock := [ ZnNewLineWriterStream on: 
+			(ZnCharacterWriteStream
+					on: Stdio stdout
+					encoding: 'utf8') ].
 	self
 		assert: (streamBlock isNil or: [ streamBlock == theBlock ])
 		description: 'streamBlock already initialized'.
