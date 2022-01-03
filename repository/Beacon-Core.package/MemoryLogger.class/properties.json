@@ -12,7 +12,8 @@
 	"instvars" : [
 		"recordings",
 		"announcer",
-		"mutex"
+		"mutex",
+		"interestingAnnouncements"
 	],
 	"name" : "MemoryLogger",
 	"type" : "normal"
