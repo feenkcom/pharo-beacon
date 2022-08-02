@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "ContextStackSignal",
+	"category" : "Beacon-ExtraSignals-Beacon-ExtraSignals",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "BrCursorOutOfRangeSignal",
+	"type" : "normal"
+}
