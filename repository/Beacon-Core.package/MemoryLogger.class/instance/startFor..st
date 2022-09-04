@@ -1,5 +1,5 @@
 running
 startFor: anAnnouncementOrASetOfAnnouncements
 
-	interestingAnnouncements := anAnnouncementOrASetOfAnnouncements.
+	self initializeInterestingSubscriptionsWith:  interestingAnnouncements.
 	^ super startFor: anAnnouncementOrASetOfAnnouncements

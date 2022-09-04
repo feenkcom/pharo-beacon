@@ -1,0 +1,3 @@
+initialization
+initializeInterestingSubscriptionsWith: anAnnouncementOrASetOfAnnouncements 
+	interestingAnnouncements := anAnnouncementOrASetOfAnnouncements.
