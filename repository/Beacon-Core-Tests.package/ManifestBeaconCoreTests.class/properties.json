@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "TestCase",
-	"category" : "Beacon-Core-Tests-Tests",
+	"super" : "PackageManifest",
+	"category" : "Beacon-Core-Tests-Manifest",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "SignalLoggerTest",
+	"name" : "ManifestBeaconCoreTests",
 	"type" : "normal"
 }
