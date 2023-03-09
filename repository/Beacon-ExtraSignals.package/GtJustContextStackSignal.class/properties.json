@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "ContextStackSignal",
+	"category" : "Beacon-ExtraSignals",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GtJustContextStackSignal",
+	"type" : "normal"
+}
