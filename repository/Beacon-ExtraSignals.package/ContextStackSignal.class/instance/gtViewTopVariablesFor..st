@@ -5,4 +5,4 @@ gtViewTopVariablesFor: aView
 		ifEmpty: [ aView empty  ]
 		ifNotEmpty: [ :aStack |
 			(aStack first gtVariablesFor: aView)
-				title: 'Top Variables' ]
+				title: 'Top variables' ]
