@@ -1,8 +1,8 @@
 testing
 testRecordTwoSignalsInTheRightOrder
 	| logger |
-	logger := MemoryLogger new 
-					runDuring: [ 
+	logger := MemoryLogger new
+					runDuring: [
 						StringSignal emit: 'test1'.
 						StringSignal emit: 'test2' ].
 	self assert: logger recordings size equals: 2.
