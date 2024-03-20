@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Beacon-SerializingLoggers",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"logger",
+		"interval",
+		"task",
+		"state"
+	],
+	"name" : "StreamLoggerFlusher",
+	"type" : "normal"
+}
