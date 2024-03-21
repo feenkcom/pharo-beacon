@@ -1,0 +1,4 @@
+accessing
+flushLog
+
+	logger flushLog
