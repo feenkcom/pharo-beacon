@@ -2,5 +2,6 @@ printing
 printOn: aStream
 	super printOn: aStream.
 	aStream 
-		nextPutAll: ' named: ';
-		nextPutAll: name asString
+		nextPut: $(;
+		nextPutAll: name asString;
+		nextPut: $)
