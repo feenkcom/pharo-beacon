@@ -1,4 +1,5 @@
 actions
 flushLog
 
-	stream ifNotNil: [ stream flush ]
+	mutex critical:
+		[ stream ifNotNil: [ stream flush ] ]

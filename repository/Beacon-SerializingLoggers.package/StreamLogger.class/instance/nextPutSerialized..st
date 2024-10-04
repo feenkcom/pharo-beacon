@@ -1,4 +1,5 @@
 operations
 nextPutSerialized: anObject
-	
-	self stream nextPutAll: anObject
+
+	mutex critical:
+		[ self stream nextPutAll: anObject ]
