@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "FileLogger",
+	"category" : "Beacon-File",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"fallbackStreamBlock",
+		"usingFallback",
+		"sessionId"
+	],
+	"name" : "SessionFallbackFileLogger",
+	"type" : "normal"
+}

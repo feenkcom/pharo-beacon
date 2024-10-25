@@ -1,0 +1,3 @@
+SessionFallbackFileLogger writes signals to the specified file.  However, if an error occurs after the session has changed, i.e. the image has been restarted, instead of raising an exception, the log is redirected to the fallback stream.
+
+This handles the case where a logger is being used in an image, the image is then saved and opened in other processes which shouldn't access the log file of the original process.

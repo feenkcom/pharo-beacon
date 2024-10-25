@@ -1,5 +1,4 @@
 instance creation
 stdout
 	^ self new
-		stream: FileStream stdout
-	
+		stream: Stdio stdout	

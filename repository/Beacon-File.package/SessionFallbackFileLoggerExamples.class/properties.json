@@ -1,0 +1,16 @@
+{
+	"classtraitcomposition" : "TAssertable classTrait",
+	"classvars" : [ ],
+	"instvars" : [
+		"logger",
+		"fileReference"
+	],
+	"name" : "SessionFallbackFileLoggerExamples",
+	"commentStamp" : "",
+	"super" : "Object",
+	"traitcomposition" : "TAssertable",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Beacon-File-Examples"
+}
