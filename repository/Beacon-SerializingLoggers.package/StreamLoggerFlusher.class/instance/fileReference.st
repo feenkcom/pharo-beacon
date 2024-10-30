@@ -1,0 +1,4 @@
+accessing
+fileReference
+
+	^ logger fileReference
