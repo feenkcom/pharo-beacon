@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "BeaconLoggerSignal",
+	"category" : "Beacon-Syslog-Extensions",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"flusher"
+	],
+	"name" : "StreamLoggerFlusherErrorSignal",
+	"type" : "normal"
+}

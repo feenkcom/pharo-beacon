@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "BeaconSignal",
+	"category" : "Beacon-Syslog-Extensions",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "BeaconLoggerSignal",
+	"type" : "normal"
+}

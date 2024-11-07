@@ -1,0 +1,1 @@
+StreamLoggerFlusherErrorSignal is emitted when an exception occurs while attempting to flush a logger.

@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "Beacon-SerializingLoggers",
+	"category" : "Beacon-SerializingLoggers-Flushing",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
@@ -9,7 +9,8 @@
 		"logger",
 		"interval",
 		"task",
-		"state"
+		"state",
+		"exception"
 	],
 	"name" : "StreamLoggerFlusher",
 	"type" : "normal"
