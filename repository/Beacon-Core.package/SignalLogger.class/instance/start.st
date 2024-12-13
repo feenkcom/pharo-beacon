@@ -1,3 +1,3 @@
 registering
 start
-	self startFor: BeaconSignal 
+	self startFor: BeaconSignal excludingNormalOperationSignals
