@@ -1,4 +1,4 @@
-as yet unclassified
+private
 sessionId
 	"Answer the session id.
 	Only for testing purposes."

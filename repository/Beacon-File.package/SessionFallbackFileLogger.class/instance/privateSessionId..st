@@ -1,4 +1,4 @@
-as yet unclassified
+private
 privateSessionId: aString
 	"Set the session id.
 	Only for testing purposes."
