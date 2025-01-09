@@ -1,5 +1,5 @@
 instance creation
 filename: aStringOrFileReference append: appending
-	^ self new
+	^ self instance
 		filename: aStringOrFileReference;
 		append: appending
