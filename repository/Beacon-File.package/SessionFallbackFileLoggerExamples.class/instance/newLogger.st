@@ -4,4 +4,4 @@ newLogger
 
 	self assert: logger isNil.
 	fileReference := FileSystem memory root / 'log.log'.
-	logger := SessionFallbackFileLogger filename: fileReference.
+	logger := SessionFallbackFileLogger new filename: fileReference.
