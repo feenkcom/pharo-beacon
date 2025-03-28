@@ -1,4 +1,6 @@
 accessing
 nextPutSerialized: aString
-	super nextPutSerialized: aString.
-	self stream nextPut: self lineSeparator 
+
+	mutex critical:
+		[ super nextPutSerialized: aString.
+		self stream nextPut: self lineSeparator. ].

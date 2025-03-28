@@ -1,4 +1,5 @@
 accessing
 append: aBoolean
-	aBoolean ifTrue: [  
-		self stream setToEnd ]
+	aBoolean ifTrue: [
+		mutex critical:
+			[ self stream setToEnd ] ]

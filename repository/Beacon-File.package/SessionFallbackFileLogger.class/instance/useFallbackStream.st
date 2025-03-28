@@ -6,6 +6,7 @@ useFallbackStream
 	
 	"Make a best attempt at closing the stream.
 	If we've moved to another machine, the path may not exist, so ignore failures."
-	[ stream close ] on: Error do: [ :ex | ex logStackToFile ].
-	usingFallback := true.
-	stream := fallbackStreamBlock value.
+	mutex critical:
+		[ [ stream close ] on: Error do: [ :ex | ex logStackToFile ].
+		usingFallback := true.
+		stream := fallbackStreamBlock value. ].
