@@ -13,4 +13,4 @@ nextPutSerialized: aString
 			SessionManager default currentSession id = sessionId ifTrue: 
 				[ ex pass ].
 			self useFallbackStream.
-			ex restart ].
+			ex retry ].
