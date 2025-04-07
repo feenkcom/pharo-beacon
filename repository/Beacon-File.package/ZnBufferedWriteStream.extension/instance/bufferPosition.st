@@ -1,0 +1,4 @@
+*Beacon-File
+bufferPosition
+
+	^ position

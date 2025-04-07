@@ -1,7 +1,12 @@
 private
 newLogger
 	"Answer a new in-memory logger"
-
+	| root |
+	
 	self assert: logger isNil.
-	fileReference := FileSystem memory root / 'log.log'.
-	logger := SessionFallbackFileLogger new filename: fileReference.
+	root := FileSystem memory root.
+	fileReference := root / 'log.log'.
+	fallbackReference := root / 'fallback.log'.
+	logger := SessionFallbackFileLogger new 
+		filename: fileReference;
+		fallbackStreamBlock: [ fallbackReference writeStream ].

@@ -3,7 +3,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"logger",
-		"fileReference"
+		"fileReference",
+		"fallbackReference"
 	],
 	"name" : "SessionFallbackFileLoggerExamples",
 	"commentStamp" : "",

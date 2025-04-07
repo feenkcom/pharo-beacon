@@ -9,4 +9,6 @@ useFallbackStream
 	mutex critical:
 		[ [ stream close ] on: Error do: [ :ex | ex logStackToFile ].
 		usingFallback := true.
-		stream := fallbackStreamBlock value. ].
+		stream := fallbackStreamBlock value.
+		binary ifFalse:
+			[ stream encoder: self encoder ] ].
