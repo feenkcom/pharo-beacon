@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "PhilippeBack 5/3/2017 14:48",
 	"super" : "StreamLogger",
-	"category" : "Beacon-File",
+	"category" : "Beacon-File-Loggers",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

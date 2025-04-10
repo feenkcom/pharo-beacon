@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "<historical>",
 	"super" : "FileLogger",
-	"category" : "Beacon-File",
+	"category" : "Beacon-File-Loggers",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
