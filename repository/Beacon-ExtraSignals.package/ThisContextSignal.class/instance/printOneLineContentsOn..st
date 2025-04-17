@@ -1,7 +1,10 @@
 printing
 printOneLineContentsOn: stream
-	stream nextPutAll: (self stack first asString 
+
+	self message ifEmpty:
+		[ stream nextPutAll: (self stack first asString 
 					copyReplaceAll: String cr 
 					with: String cr, 
 							String tab, 
-							String tab)
+							String tab) ]
+	ifNotEmpty: [ :message | stream nextPutAll: message ].
