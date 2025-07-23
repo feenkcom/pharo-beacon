@@ -2,7 +2,7 @@ actions
 flushLog
 
 	[ super flushLog ]
-		on: FileWriteError
+		on: FileWriteError, PrimitiveFailed
 		do: [ :ex |
 			usingFallback ifTrue:
 				[ ex pass ]
