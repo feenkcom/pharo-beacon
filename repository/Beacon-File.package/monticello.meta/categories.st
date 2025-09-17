@@ -1,2 +1,1 @@
-SystemOrganization addCategory: #'Beacon-File'!
-SystemOrganization addCategory: #'Beacon-File-Examples'!
+self packageOrganizer ensurePackage: #'Beacon-File' withTags: #('Examples')!

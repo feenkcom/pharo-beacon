@@ -2,4 +2,4 @@ actions
 flushLog
 
 	mutex critical:
-		[ stream ifNotNil: [ stream flush ] ]
+		[ self stream ifNotNil: [ :theStream | theStream flush ] ]

@@ -8,5 +8,5 @@ logMessage
 	logger runFor: StringSignal during: [ StringSignal emit: 'log message' ].
 	logger close.
 	self assert: (fileReference contents trimRight endsWith: 'log message').
-	self deny: fallbackReference exists.
+	self assert: fallbackReference contents isEmpty.
 	self assert: logger sessionId = SessionManager default currentSession id

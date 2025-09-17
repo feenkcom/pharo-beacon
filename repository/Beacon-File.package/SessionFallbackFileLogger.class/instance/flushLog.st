@@ -9,7 +9,7 @@ flushLog
 			ifFalse:
 				[ | bufferedStream unwritten |
 				"Recover the unwritten portion of the current stream, switch to the fallback stream and write the buffer"
-				bufferedStream := stream wrappedStream.
+				bufferedStream := self stream wrappedStream.
 				"Copy the unwritten portion of the buffer.
 				Ignore the trailing line feed."
 				unwritten := bufferedStream buffer copyFrom: 1 to: bufferedStream bufferPosition - 1.
