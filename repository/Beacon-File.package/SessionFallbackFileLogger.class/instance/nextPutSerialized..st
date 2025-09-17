@@ -3,7 +3,7 @@ nextPutSerialized: aString
 	| retried |
 
 	"Try and catch the change of session early otherwise messages may be lost to buffering"
-	(self stream isNotNil and:
+	(stream isNotNil and:
 	[ usingFallback not and: 
 	[ SessionManager default currentSession id ~= sessionId ] ]) ifTrue:
 		[ self useFallbackStream ].
