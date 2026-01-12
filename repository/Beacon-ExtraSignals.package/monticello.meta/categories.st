@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #'Beacon-ExtraSignals'!
+self packageOrganizer ensurePackage: #'Beacon-ExtraSignals' withTags: #()!
