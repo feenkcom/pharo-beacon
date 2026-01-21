@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #'Beacon-Core-GT'!
+self packageOrganizer ensurePackage: #'Beacon-Core-GT' withTags: #(#Extensions #Logger #SerializingLoggers)!

@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "BeaconSignal",
+	"category" : "Beacon-Core-GT-Extensions",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"encodingError"
+	],
+	"name" : "GtBeaconLeJsonEncodingErrorSignal",
+	"type" : "normal"
+}
