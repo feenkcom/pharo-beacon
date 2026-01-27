@@ -1,0 +1,4 @@
+accessing
+contents
+
+	^ filename contents

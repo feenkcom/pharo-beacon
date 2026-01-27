@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Beacon-Core-GT-Analysis",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"filename",
+		"signals",
+		"strictMode"
+	],
+	"name" : "GtBeaconJsonLogReader",
+	"type" : "normal"
+}
