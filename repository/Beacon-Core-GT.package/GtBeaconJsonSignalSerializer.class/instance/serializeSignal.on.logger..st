@@ -7,7 +7,7 @@ serializeSignal: aSignal on: aStream logger: aLogger
 				prettyPrint: false;
 				nextPut: aSignal asGtJsonLogDictionary ] ]
 		on: Error
-		do: [ :ex | self halt.
+		do: [ :ex |
 			NeoJSONWriter toString: {
 				'signalClass' -> 'GtBeaconLeJsonEncodingErrorSignal'.
 				'message' -> aSignal printOneLineString.
