@@ -1,3 +1,5 @@
 initialize
 currentExceptionStack
-	^ exception signalerContext stack collect: #copy
+	^ exception signalContext
+		ifNotNil: [ :aContext | aContext stack collect: #copy ]
+		ifNil: [ #() ].
