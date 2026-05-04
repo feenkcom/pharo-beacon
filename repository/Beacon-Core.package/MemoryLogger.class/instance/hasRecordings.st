@@ -1,0 +1,4 @@
+testing
+hasRecordings
+
+	^ recordings isNotEmpty 
