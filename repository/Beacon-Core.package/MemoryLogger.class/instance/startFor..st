@@ -1,5 +1,0 @@
-running
-startFor: anAnnouncementOrASetOfAnnouncements
-
-	self initializeInterestingSubscriptionsWith:  anAnnouncementOrASetOfAnnouncements.
-	^ super startFor: anAnnouncementOrASetOfAnnouncements

@@ -1,4 +1,0 @@
-*Beacon-File
-name
-
-	^ 'memory'

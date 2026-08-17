@@ -1,4 +1,0 @@
-accessing
-flushLog
-
-	logger flushLog

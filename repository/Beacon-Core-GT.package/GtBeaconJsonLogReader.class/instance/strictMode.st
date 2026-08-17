@@ -1,3 +1,0 @@
-accessing
-strictMode
-	^ strictMode

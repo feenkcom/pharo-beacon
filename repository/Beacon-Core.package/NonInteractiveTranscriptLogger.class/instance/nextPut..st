@@ -1,3 +1,0 @@
-registering
-nextPut: anAnnouncement
-	NonInteractiveTranscript stdout crShow: anAnnouncement

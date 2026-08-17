@@ -1,4 +1,0 @@
-testing
-hasEntries
-
-	^ self hasRecordings

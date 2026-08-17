@@ -1,3 +1,0 @@
-accessing
-entryCount
-	^ self recordingsCount

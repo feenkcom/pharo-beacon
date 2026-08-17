@@ -1,4 +1,0 @@
-private
-flush
-
-	logger flushLog
