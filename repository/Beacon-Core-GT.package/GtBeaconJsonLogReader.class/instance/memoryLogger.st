@@ -4,4 +4,4 @@ memoryLogger
 	Generally for debugging purposes."
 
 	^ MemoryLogger new
-		basicRecordings: self signals.
+		initializeWithRecordings: self signals.

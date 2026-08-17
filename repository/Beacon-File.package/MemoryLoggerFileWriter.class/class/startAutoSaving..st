@@ -1,9 +1,9 @@
 saving
-startAutoSaving
+startAutoSaving: aLogger
 	"Write the default instance to a file every WritePeriod"
 
 	WriteProcess ifNotNil: [ self error: 'Write process already running' ].
 
-	WriteProcess := [ self writeLoop ]
+	WriteProcess := [ self writeLoop: aLogger ]
 		forkAt: Processor userInterruptPriority
-		named: self class name, ' auto-save'.
+		named: aLogger class name, ' auto-save'.

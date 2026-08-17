@@ -8,7 +8,7 @@ fromSton: stonReader
 		idx = 1 ifFalse: [ self error: 'Invalid STON' ].
 		logger
 			name: (each at: #name);
-			basicRecordings: (each at: #recordings);
+			initializeWithRecordings: (each at: #recordings);
 			basicEntryCount: (each at: #entryCount);
 			basicIndex: (each at: #index);
 			basicFullBuffer: (each at: #fullBuffer);

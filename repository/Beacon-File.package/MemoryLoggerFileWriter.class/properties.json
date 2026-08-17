@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Beacon-File-Loggers",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"WriteFilename",
+		"WritePeriod",
+		"WriteProcess"
+	],
+	"instvars" : [ ],
+	"name" : "MemoryLoggerFileWriter",
+	"type" : "normal"
+}

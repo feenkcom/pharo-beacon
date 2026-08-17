@@ -1,2 +1,1 @@
-SystemOrganization addCategory: #'Beacon-SerializingLoggers'!
-SystemOrganization addCategory: #'Beacon-SerializingLoggers-Examples'!
+self packageOrganizer ensurePackage: #'Beacon-SerializingLoggers' withTags: #(#Examples)!

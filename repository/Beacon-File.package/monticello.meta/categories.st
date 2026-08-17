@@ -1,1 +1,1 @@
-self packageOrganizer ensurePackage: #'Beacon-File' withTags: #('Examples')!
+self packageOrganizer ensurePackage: #'Beacon-File' withTags: #(#Examples)!
