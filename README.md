@@ -11,6 +11,6 @@ More info in an introductory blog post:
 ```smalltalk
 Metacello new
    baseline: 'Beacon';
-   repository: 'github://feenkcom/pharo-beacon/repository';
+   repository: 'github://feenkcom/pharo-beacon:main/src';
    load
 ```
