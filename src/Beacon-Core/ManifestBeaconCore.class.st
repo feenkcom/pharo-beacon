@@ -4,7 +4,7 @@ Class {
 	#category : #'Beacon-Core'
 }
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 ManifestBeaconCore class >> mustNotDependOn [
 	^ { 
 		'Bloc'.
@@ -12,7 +12,7 @@ ManifestBeaconCore class >> mustNotDependOn [
 	}
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 ManifestBeaconCore class >> mustOnlyDependOn [
 	^ {'Announcements-Core'.
 		'Collections-Sequenceable'.
@@ -22,6 +22,5 @@ ManifestBeaconCore class >> mustOnlyDependOn [
 		'System-Model'.
 		'System-Time'.
 		'Transcript-NonInteractive'.
-		'UnifiedFFI'.
 	}
 ]
