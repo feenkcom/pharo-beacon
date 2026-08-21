@@ -1,0 +1,20 @@
+Extension { #name : #MemoryLogger }
+
+{ #category : #'*Beacon-Core-GT' }
+MemoryLogger class >> gtExampleEmpty [
+	<gtExample>
+	<label: 'Empty'>
+	
+	^ self new
+]
+
+{ #category : #'*beacon-core-gt' }
+MemoryLogger >> gtInspectorGroupedIn: composite [
+	<gtInspectorPresentationOrder: 1>
+	composite fastTable 
+		title: 'Grouped';
+		display: [ (self recordings reverse groupedBy: [ :each | each class ]) associations ];
+		column: 'Class' evaluated: [ :each | each key ];
+		column: 'Instances' evaluated: [ :each | each value size ];
+		send: [ :each | self select: [ :s | s class = each key ] ]
+]
