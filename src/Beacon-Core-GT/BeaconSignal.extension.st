@@ -36,7 +36,7 @@ BeaconSignal class >> fromGtJsonDictionary: aDictionary [
 			yourself.
 
 	[ message := aDictionary at: 'message'.
-	message first = $| ifTrue:
+	(message isNotEmpty and: [ message first = $| ]) ifTrue:
 		[ message := message allButFirst trimBoth ].
 	(message includesSubstring: ' | ') ifTrue:
 		[ instance 
