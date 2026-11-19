@@ -32,7 +32,7 @@ StringSignal class >> log: aString [
 
 { #category : #accessing }
 StringSignal >> message [
-	^ message ifNil: [ self properties at: 'message' ifAbsent: [ '' ] ]
+	^ message ifNil: [ self properties at: #message ifAbsent: [ '' ] ]
 ]
 
 { #category : #accessing }

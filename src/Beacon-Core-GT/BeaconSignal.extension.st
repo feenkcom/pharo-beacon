@@ -28,11 +28,11 @@ BeaconSignal >> asGtJsonLogDictionary [
 BeaconSignal class >> fromGtJsonDictionary: aDictionary [
 	| instance message timestamp |
 
-	timestamp := DateAndTime readFrom: (aDictionary at: #timestamp) readStream.
+	timestamp := DateAndTime readFrom: (aDictionary at: 'timestamp') readStream.
 	instance := self new
 			basicTimestamp: timestamp;
-			basicProcessId: (aDictionary at: #processId);
-			basicProperties: (aDictionary at: #properties ifAbsent: [ Dictionary new ]);
+			basicProcessId: (aDictionary at: 'processId');
+			basicProperties: (self propertiesFromGtJsonDictionary: (aDictionary at: 'properties' ifAbsent: [ Dictionary new ]));
 			yourself.
 
 	[ message := aDictionary at: 'message'.
@@ -43,12 +43,12 @@ BeaconSignal class >> fromGtJsonDictionary: aDictionary [
 			initializeFromTimestamp: timestamp 
 			andData: (message splitOn: ' | ') ]
 	ifFalse:
-		[ instance properties at: 'message' put: message ]. ]
+		[ instance properties at: #message put: message ]. ]
 			on: Error
 			do: [ :ex |
 				instance properties
-					at: 'message' put: message asString;
-					at: 'messageProcessingError' put: ex ].
+					at: #message put: message asString;
+					at: #messageProcessingError put: ex ].
 	^ instance.
 ]
 
@@ -92,6 +92,17 @@ BeaconSignal >> processId: aString [
 BeaconSignal >> properties: aDictionary [
 
 	properties := aDictionary
+]
+
+{ #category : #'*Beacon-Core-GT' }
+BeaconSignal class >> propertiesFromGtJsonDictionary: aDictionary [
+	"Signal properties are keyed by Symbols (properties at: #message); JSON gives String keys"
+
+	| properties |
+	properties := Dictionary new.
+	aDictionary keysAndValuesDo: [ :aKey :aValue |
+		properties at: (aKey isString ifTrue: [ aKey asSymbol ] ifFalse: [ aKey ]) put: aValue ].
+	^ properties
 ]
 
 { #category : #'*Beacon-Core-GT' }
