@@ -143,7 +143,7 @@ FileLogger >> isStdioStream: theStream [
 	innerStream := theStream.
 	[ innerStream wrappedStream isNil ] whileFalse:
 		[ innerStream := innerStream wrappedStream ].
-	^ #('stdout' 'stderr') includes: innerStream name
+	^ #(#stdout #stderr) includes: innerStream name
 ]
 
 { #category : #accessing }
