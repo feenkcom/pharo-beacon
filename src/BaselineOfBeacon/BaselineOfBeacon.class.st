@@ -10,7 +10,7 @@ BaselineOfBeacon >> baseline: spec [
 	spec for: #'common' do: [
 		spec
 			baseline: 'BeaconCore' with: [
-				spec repository: 'github://feenkcom/pharo-beacon:v0.5.126/src' ].
+				spec repository: 'github://feenkcom/pharo-beacon:v0.5.127/src' ].
 
 		spec package: 'Beacon-Core-Tests' with: [
 			spec requires: #(#BeaconCore) ].
